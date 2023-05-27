@@ -10,7 +10,6 @@ bot = discord.Bot(intents=intents, )
 @bot.event
 async def on_ready():  # regarde si le bot est en ligne
     print("AMONG US BOT READY")
-    #bot.add_view(choix_urgence_start())
     await bot.change_presence(activity=discord.Game("Among us"))
 
 
